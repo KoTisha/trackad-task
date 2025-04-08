@@ -1,0 +1,5 @@
+docker/
+docker-compose.yml
+helm/
+.git/
+README.md

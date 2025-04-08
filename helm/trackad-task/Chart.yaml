@@ -1,0 +1,5 @@
+apiVersion: v2
+name: trackad-task
+description: A simple Symfony app Helm chart for test task
+version: 0.0.1
+appVersion: "0.1"

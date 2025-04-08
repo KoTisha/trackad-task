@@ -1,0 +1,15 @@
+applicationPort: 8000
+
+replicaCount: 1
+
+image:
+  repository: trackad-task-app
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: NodePort
+  port: 8000
+  nodePort: 30080
+
+resources: {}
