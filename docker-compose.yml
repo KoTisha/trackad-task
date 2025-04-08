@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: ./simple-application
+      dockerfile: ../docker/app.prod.Dockerfile
+      target: runtime
+    container_name: symfony-application
+    environment:
+      APP_ENV: prod
+      APP_DEBUG: 0
+    ports:
+      - "8080:8000"
